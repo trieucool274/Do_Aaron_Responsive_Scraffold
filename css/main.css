@@ -1,0 +1,645 @@
+.hide
+{
+  display: none;
+}
+
+img, embed, object, video {
+  max-width: 100%; }
+
+
+html {
+  box-sizing: border-box; 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+img {
+  -ms-interpolation-mode: bicubic; 
+}
+
+@font-face {
+font-family: 'lustriaregular';
+src: url('../fonts/lustria-regular-webfont.eot');
+src: url('../fonts/lustria-regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('../fonts/lustria-regular-webfont.woff') format('woff'),
+url('../fonts/lustria-regular-webfont.ttf') format('truetype'),
+url('../fonts/lustria-regular-webfont.svg#lustriaregular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'latoregular';
+src: url('../fonts/lato-regular-webfont.eot');
+src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('../fonts/lato-regular-webfont.woff') format('woff'),
+url('../fonts/lato-regular-webfont.ttf') format('truetype'),
+url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+body
+{
+  font-family: 'latoregular', Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+a 
+{ 
+  color:#000; 
+  text-decoration: none;  
+  transition:all .1s linear 0s;
+}
+
+h2, h3
+{
+  font-family: 'lustriaregular', Times, "Times New Roman", serif;
+  color: #215445;
+}
+
+.container {
+  margin: 0px auto;
+  padding: 0px 15px 0 15px;
+  max-width: 1200px; 
+}
+
+
+#mainHeader
+{
+  margin: 5px 0 20px 0;
+}
+
+#mainNav
+{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#mainNav button
+{
+  margin-left: auto;
+}
+
+#searchBar
+{
+  display: flex;
+  flex-direction: row;
+}
+
+#mainNav input[type=text]
+{
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #cacaca;
+  border-radius: 3px 0 0 3px;
+  background-color: #fefefe;
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+  line-height: 1.5;
+  color: #0a0a0a;
+}
+
+#mainNav input[type=submit]
+{
+  height: 40px;
+  width: 100px;
+  border: 1px solid transparent;
+  border-radius: 0 3px 3px 0;
+  font-size: 0.75em;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #8fa771;
+  color: #fefefe;
+}
+
+
+#navContain
+{
+  display: none;
+  margin-top: 20px;
+}
+
+#navContain.slideToggle
+{
+  display: block;
+}
+
+#mainNav button
+{
+  background: url(../images/burger.svg) center no-repeat;
+  border: 0;
+  width: 35px;
+  height: 35px;
+  transition: all 400ms ease;
+}
+
+#mainNav button.expanded
+{
+
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+
+  /* default transform */
+  transform: rotate(90deg);
+}
+
+#mainNav li a
+{
+  display: block;
+  color: #8ea76d;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#mainNav li
+{
+  border-bottom: 1px solid #efefef;
+}
+
+#mainNav li first-child
+{
+  border-top: 1px solid #efefef;
+}
+
+#mainNav li last-child
+{
+  margin-bottom: 10px;
+}
+
+#mainNav li a:hover
+{
+  background-color: #efefef;
+}
+
+#searchForm 
+{
+  margin-top: 20px;
+}
+
+#wollastonLogo
+{
+  display: block;
+  max-width: 140px;
+  margin: 0 auto;
+}
+
+
+#banner
+{
+  background-color: #ccc;
+  margin-bottom: 30px;
+  height: 300px;
+  background-image: url(../images/panoramic_bg_3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 15px;
+}
+
+#info
+{
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px 0 20px;
+  height: 270px;
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+#info h2
+{
+  font-size: 1.125em;
+  margin-bottom: 15px;
+}
+
+#info h3
+{
+  font-size: 0.875em;
+  letter-spacing: 0.25px;
+  line-height: 18px;
+}
+
+#info p
+{
+  color: #090909;
+  font-size: 0.9em;
+  margin-top: 10px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+#bookNow
+{
+  font-family: 'lustriaregular', Times, 'Times New Roman', serif;
+  display: block;
+  width: 120px;
+  color: #fff;
+  padding: 0.75em 0;
+  background-color: #8fa771;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 1em;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#bookNow:hover
+{
+  background-color: #215445;
+}
+
+#serviceContain
+{
+  margin-bottom: 10px;
+}
+.services
+{
+  margin-bottom: 20px; 
+  padding-top: 1px;
+}
+
+.services h2
+{
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.services h3
+{
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.services p
+{
+  color: #333;
+  font-size: 0.875em;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.icon
+{
+  float: left;
+  max-width: 70px;
+  margin: 0 20px 0 0;
+}
+
+
+#extraContain
+{
+  margin-bottom: 60px;
+}
+
+.extras-img
+{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.extras h2
+{
+  font-size: 1.25em;
+  line-height: 0;
+  margin-bottom: 30px;
+}
+
+.extras p
+{
+  color: #333;
+  font-size: 0.875em;
+  line-height: 22px;
+}
+
+
+#footerContain
+{
+  background-color: #8fa771;
+  height: 70px;
+}
+
+#backButton
+{
+  text-decoration: none;
+  color: #fff;
+  line-height: 70px;
+  font-size: 0.75em;
+}
+
+#backButton:hover
+{
+  color: #333;
+}
+
+#footerNav
+{
+  display: none;
+}
+
+
+@media screen and (min-width: 25.063em)
+{
+  #info h2
+  {
+    font-size: 1.5em;
+  }
+
+  #info h3
+  {
+    font-size: 1.0875em;
+    letter-spacing: 0.25px;
+  }
+
+  #info p
+  {
+    font-size: 0.875em;
+    margin-top: 10px;
+  }
+}
+
+
+@media screen and (min-width: 30em)
+{
+  #info 
+  {
+    background: url(../images/golf_club2.png) right no-repeat rgba(255, 255, 255, 0.8);
+  }
+}
+
+
+@media screen and (min-width: 38.75em)
+{
+  #info h2
+  {
+    font-size: 1.25em;
+  }
+
+  #info h3
+  {
+    font-size: 1.25em;
+    letter-spacing: 0.25px;
+  }
+
+  #info p
+  {
+    font-size: 0.875em;
+    width: 60%;
+  }
+}
+
+
+@media screen and (min-width: 40em)
+{
+  #serviceContainm #extraContain
+  {
+    display: flex;
+  }
+
+  .services
+  {
+    margin-right: 20px;
+  }
+
+  .services:last-child
+  {
+    margin-right: 0;
+  }
+
+  .icon
+  {
+    max-width: 50px;
+    margin-right: 8px;
+  }
+
+  .services p
+  {
+    color: #333;
+    font-size: 0.875em;
+    line-height: 22px
+  }
+
+  .services h2
+  {
+    font-size: 0.925em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    line-height: 14px;
+  }
+
+  .services h3
+  {
+    font-size: 0.875em;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  #banner
+  {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/panoramic_bg_1.jpg);
+  }
+
+
+  #backButton
+  {
+    display: none;
+  }
+
+  #footerNav
+  {
+    display: block;
+  }
+
+  #footerContain ul
+  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.875em;
+  }
+
+  #footerContain ul li
+  {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  #footerContain ul li a 
+  {
+    color: #fff;
+    line-height: 70px;
+  }
+
+  #footerContain ul li a:hover
+  {
+    color: #333;
+  }
+
+}
+
+
+@media screen and (min-width: 50em)
+{
+  #info
+  {
+    background: url(../images/golf_club.png) right no-repeat rgba(255, 255, 255, 0.8); 
+  }
+}
+
+
+@media screen and (min-width: 61.875em)
+{
+  #info p
+  {
+    width: 50%;
+  }
+}
+
+
+@media screen and (min-width: 64em)
+{
+  #mainHeader
+  {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  #button
+  {
+    display: none;
+  }
+
+  #navContain
+  {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  #mainNav
+  {
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    margin-left: auto;
+  }
+
+  #navList
+  {
+    text-align: right;
+  }
+
+  #mainNav li
+  {
+    border-bottom: none;
+    display: inline;
+    margin-left: 20px;
+  }
+
+  #mainNav li a 
+  {
+    background-color: #fff;
+    display: inline;
+    padding: 5px 0;
+    text-decoration: none;
+    color: #6d6d6c;
+  }
+
+  #mainNav li a:hover
+  {
+    color: #8fa777;
+    border-bottom: 3px solid #8fa771;
+    padding-bottom: 5px;
+    background-color: transparent;
+  }
+
+  #mainNav li:first-child
+  {
+    border-top: none;
+  }
+
+  #mainNav li:last-child
+  {
+    margin-bottom: 0;
+  }
+
+  #searchForm
+  {
+    width: 97%;
+    order: -1;
+    margin: 0 0 50px auto;
+  }
+
+  #Brand
+  {
+    order: -1;
+  }
+
+  #wollastonLogo
+  {
+    max-width: 160px;
+  }
+
+
+  #serviceContain
+  {
+    display: flex;
+  }
+
+  .services
+  {
+    margin-right: 20px;
+  }
+
+  .services:last-child
+  {
+    margin-right: 0;
+  }
+
+  .icon
+  {
+    max-width: 15%;
+  }
+
+  .services p
+  {
+    font-size: 0.9375em;
+    width: auto;
+  }
+
+  .services h2
+  {
+    font-size: 1.25em;
+  }
+
+  .services h3
+  {
+    font-size: 0.875em;
+  }
+
+
+  #extraContain
+  {
+    display: flex;
+  }
+
+  .extras:last-child
+  {
+    margin-left: 40px;
+  }
+
+}
